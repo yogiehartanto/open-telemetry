@@ -1,24 +1,9 @@
 # open-telemetry
 simple grafana logs using Go
 
-           ┌──────────────┐
-           │   Go App     │
-           │ (your API)   │
-           └─────┬────────┘
-                 │
-      ┌──────────┼──────────┐
-      │          │          │
-   metrics     traces       logs
-      │          │          │
-      ▼          ▼          ▼
-OTel Collector  Tempo   stdout/stderr
-      │                     │
-      ▼                     ▼
- Prometheus             Promtail
-      │                     │
-      └──────────┬──────────┘
-                 ▼
-              Grafana
+<img width="345" height="471" alt="image" src="https://github.com/user-attachments/assets/2bc90b71-1cd0-448e-94de-7106f0c4ae21" />
+
+
 
 1st things 1st :
 A.
