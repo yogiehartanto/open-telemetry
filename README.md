@@ -41,6 +41,7 @@ B.
 - logs will appear
 
 notes :
+
 Loki query example : 
 {container="otel-demo-app"} | json | msg="api_called"
 
