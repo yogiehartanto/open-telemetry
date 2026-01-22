@@ -1,4 +1,4 @@
-# opentelemetry
+# open-telemetry
 simple grafana logs using Go
 
 <img width="345" height="471" alt="image" src="https://github.com/user-attachments/assets/2bc90b71-1cd0-448e-94de-7106f0c4ae21" />
@@ -6,6 +6,7 @@ simple grafana logs using Go
 
 
 1st things 1st :
+
 A.
 - put file docker folder to C:
 - PS from C:\docker
