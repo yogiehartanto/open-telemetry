@@ -21,8 +21,11 @@ A.
 - Add new data source
   <img width="1498" height="300" alt="image" src="https://github.com/user-attachments/assets/13632cde-049b-40f8-87ea-3426fe0dc075" />
 loki : http://loki:3100
+
 prometheus : http://host.docker.internal:9090
+
 tempo : http://host.docker.internal:3200
+
 - environment created
 
 B.
