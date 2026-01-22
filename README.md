@@ -8,7 +8,7 @@ simple grafana logs using Go
 1st things 1st :
 
 A.
-- put file docker folder to C:
+- put docker folder to C:
 - PS from C:\docker
 - docker compose up -d
 - docker should be run
