@@ -1,5 +1,42 @@
 # open-telemetry
-simple grafana logs using Go
+Simple grafana logs using Go.
+```
+                ┌──────────────┐
+                │   Go App     │
+                │ (your API)   │
+                └──────┬───────┘
+                       │
+            ┌──────────┼──────────┐
+            │          │          │
+         metrics     traces      logs
+            │          │          │
+            ▼          ▼          ▼
+    OTel Collector   Tempo   stdout/stderr
+            │                     │
+            ▼                     ▼
+        Prometheus             Promtail
+            │                     │
+            └──────────┬──────────┘
+                       ▼
+                    Grafana
+             
+                
+Go app			
+  ↓ log.Printf()
+Docker stdout
+  ↓
+Promtail
+  ↓
+Loki
+  ↓
+Grafana
+
+
+Go App
+  ├─ Traces → OTel Collector → Tempo
+  ├─ Metrics → OTel Collector → Prometheus
+  └─ Logs → stdout → Promtail → Loki
+```
 
 ## 📋 Prerequisites
 - **Go 1.23+**  
